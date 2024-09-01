@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SukhumvitSet-Bold.ttf">
+            <string>SukhumvitSet-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Register View Controller-->
+        <scene sceneID="ZJP-zX-mG6">
+            <objects>
+                <viewController storyboardIdentifier="RegisterViewController" id="YKw-iz-SFZ" customClass="RegisterViewController" customModule="Ghost_Night" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n0K-E8-fbz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_login" translatesAutoresizingMaskIntoConstraints="NO" id="XRb-V0-Ds3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1b-fI-fPd">
+                                <rect key="frame" x="8" y="52" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="A3X-QX-2SV"/>
+                                    <constraint firstAttribute="width" constant="44" id="n47-om-oI4"/>
+                                </constraints>
+                                <state key="normal" image="ic_login_close"/>
+                                <connections>
+                                    <action selector="closeAction:" destination="YKw-iz-SFZ" eventType="touchUpInside" id="XHt-Q0-08l"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="สมัครสมาชิก" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ya6-1c-400">
+                                <rect key="frame" x="8" y="257" width="398" height="38"/>
+                                <fontDescription key="fontDescription" name="SukhumvitSet-Bold" family="Sukhumvit Set" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TAi-QD-VbT">
+                                <rect key="frame" x="27" y="320" width="358" height="203"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jHg-e9-z9y" userLabel="EmailView">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="อีเมล" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwp-I5-Cse">
+                                                <rect key="frame" x="8" y="0.0" width="38" height="50"/>
+                                                <fontDescription key="fontDescription" name="SukhumvitSet-Bold" family="Sukhumvit Set" pointSize="18"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uke-7s-fb7">
+                                                <rect key="frame" x="54" y="0.0" width="296" height="50"/>
+                                                <fontDescription key="fontDescription" name="SukhumvitSet-Bold" family="Sukhumvit Set" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="uke-7s-fb7" secondAttribute="trailing" constant="8" id="9wp-RM-VLN"/>
+                                            <constraint firstItem="lwp-I5-Cse" firstAttribute="top" secondItem="jHg-e9-z9y" secondAttribute="top" id="AfE-Rf-qXH"/>
+                                            <constraint firstAttribute="bottom" secondItem="lwp-I5-Cse" secondAttribute="bottom" id="GGx-px-ALe"/>
+                                            <constraint firstItem="uke-7s-fb7" firstAttribute="leading" secondItem="lwp-I5-Cse" secondAttribute="trailing" constant="8" id="I6a-QB-cmd"/>
+                                            <constraint firstItem="uke-7s-fb7" firstAttribute="top" secondItem="jHg-e9-z9y" secondAttribute="top" id="RSb-gt-4Wt"/>
+                                            <constraint firstAttribute="bottom" secondItem="uke-7s-fb7" secondAttribute="bottom" id="Sgy-Nf-4qv"/>
+                                            <constraint firstItem="lwp-I5-Cse" firstAttribute="leading" secondItem="jHg-e9-z9y" secondAttribute="leading" constant="8" id="f7h-OY-YGy"/>
+                                        </constraints>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MRS-kf-Ufe" userLabel="LineView1">
+                                        <rect key="frame" x="0.0" y="50" width="358" height="0.5"/>
+                                        <color key="backgroundColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="6uP-IV-dQr"/>
+                                        </constraints>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="epq-mw-eVm" userLabel="PasswordView">
+                                        <rect key="frame" x="0.0" y="50.5" width="358" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รหัสผ่าน" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZh-kA-JOd">
+                                                <rect key="frame" x="8" y="0.0" width="64" height="50"/>
+                                                <fontDescription key="fontDescription" name="SukhumvitSet-Bold" family="Sukhumvit Set" pointSize="18"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kmz-XO-tIU">
+                                                <rect key="frame" x="80" y="0.0" width="270" height="50"/>
+                                                <fontDescription key="fontDescription" name="SukhumvitSet-Bold" family="Sukhumvit Set" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="email"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="BZh-kA-JOd" secondAttribute="bottom" id="1Oo-UE-dfs"/>
+                                            <constraint firstItem="BZh-kA-JOd" firstAttribute="leading" secondItem="epq-mw-eVm" secondAttribute="leading" constant="8" id="Wle-7Q-20k"/>
+                                            <constraint firstAttribute="trailing" secondItem="kmz-XO-tIU" secondAttribute="trailing" constant="8" id="a1A-Km-0ax"/>
+                                            <constraint firstAttribute="bottom" secondItem="kmz-XO-tIU" secondAttribute="bottom" id="csb-dw-XX2"/>
+                                            <constraint firstItem="kmz-XO-tIU" firstAttribute="top" secondItem="epq-mw-eVm" secondAttribute="top" id="laY-r9-tZj"/>
+                                            <constraint firstItem="BZh-kA-JOd" firstAttribute="top" secondItem="epq-mw-eVm" secondAttribute="top" id="ovW-fx-8xo"/>
+                                            <constraint firstItem="kmz-XO-tIU" firstAttribute="leading" secondItem="BZh-kA-JOd" secondAttribute="trailing" constant="8" id="s5N-zj-OV4"/>
+                                        </constraints>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LOt-0u-vFv" userLabel="LineView2">
+                                        <rect key="frame" x="0.0" y="100.5" width="358" height="0.5"/>
+                                        <color key="backgroundColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="CHD-um-5gT"/>
+                                        </constraints>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HfC-4b-Iu1" userLabel="ConfrimPasswordView">
+                                        <rect key="frame" x="0.0" y="101" width="358" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ยืนยันรหัสผ่าน" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w59-Dp-8hA">
+                                                <rect key="frame" x="8" y="0.0" width="108" height="50"/>
+                                                <fontDescription key="fontDescription" name="SukhumvitSet-Bold" family="Sukhumvit Set" pointSize="18"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9ya-1k-6yg">
+                                                <rect key="frame" x="124" y="0.0" width="226" height="50"/>
+                                                <fontDescription key="fontDescription" name="SukhumvitSet-Bold" family="Sukhumvit Set" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="email"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="9ya-1k-6yg" firstAttribute="top" secondItem="HfC-4b-Iu1" secondAttribute="top" id="9QF-5k-2GC"/>
+                                            <constraint firstItem="w59-Dp-8hA" firstAttribute="leading" secondItem="HfC-4b-Iu1" secondAttribute="leading" constant="8" id="Di7-PB-XKe"/>
+                                            <constraint firstItem="w59-Dp-8hA" firstAttribute="top" secondItem="HfC-4b-Iu1" secondAttribute="top" id="FRU-7j-vwe"/>
+                                            <constraint firstAttribute="bottom" secondItem="9ya-1k-6yg" secondAttribute="bottom" id="KMm-ti-SDl"/>
+                                            <constraint firstAttribute="bottom" secondItem="w59-Dp-8hA" secondAttribute="bottom" id="Ncr-Yu-ifB"/>
+                                            <constraint firstAttribute="trailing" secondItem="9ya-1k-6yg" secondAttribute="trailing" constant="8" id="USX-ox-Vbb"/>
+                                            <constraint firstItem="9ya-1k-6yg" firstAttribute="leading" secondItem="w59-Dp-8hA" secondAttribute="trailing" constant="8" id="bY6-VY-hdm"/>
+                                        </constraints>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NeW-rp-i37" userLabel="LineView2">
+                                        <rect key="frame" x="0.0" y="151" width="358" height="0.5"/>
+                                        <color key="backgroundColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="VsH-gh-rGu"/>
+                                        </constraints>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ttn-vM-Hyf" userLabel="ConfrimPasswordView">
+                                        <rect key="frame" x="0.0" y="152" width="358" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ชื่อยูสเซอร์" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQ1-6q-Ipp">
+                                                <rect key="frame" x="8" y="0.0" width="78" height="50"/>
+                                                <fontDescription key="fontDescription" name="SukhumvitSet-Bold" family="Sukhumvit Set" pointSize="18"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PPA-2k-GU9">
+                                                <rect key="frame" x="94" y="0.0" width="256" height="50"/>
+                                                <fontDescription key="fontDescription" name="SukhumvitSet-Bold" family="Sukhumvit Set" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="ZQ1-6q-Ipp" secondAttribute="bottom" id="1gK-QW-q05"/>
+                                            <constraint firstItem="PPA-2k-GU9" firstAttribute="top" secondItem="Ttn-vM-Hyf" secondAttribute="top" id="21V-l0-7SM"/>
+                                            <constraint firstAttribute="bottom" secondItem="PPA-2k-GU9" secondAttribute="bottom" id="3Jj-cU-F4c"/>
+                                            <constraint firstItem="PPA-2k-GU9" firstAttribute="leading" secondItem="ZQ1-6q-Ipp" secondAttribute="trailing" constant="8" id="6m3-Jh-SMq"/>
+                                            <constraint firstItem="ZQ1-6q-Ipp" firstAttribute="leading" secondItem="Ttn-vM-Hyf" secondAttribute="leading" constant="8" id="9vs-l0-rYx"/>
+                                            <constraint firstAttribute="trailing" secondItem="PPA-2k-GU9" secondAttribute="trailing" constant="8" id="CAd-7S-sVh"/>
+                                            <constraint firstItem="ZQ1-6q-Ipp" firstAttribute="top" secondItem="Ttn-vM-Hyf" secondAttribute="top" id="dK0-d9-LpW"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="MRS-kf-Ufe" secondAttribute="trailing" id="3KR-zP-ISt"/>
+                                    <constraint firstItem="LOt-0u-vFv" firstAttribute="trailing" secondItem="NeW-rp-i37" secondAttribute="trailing" id="3bN-d9-Qxl"/>
+                                    <constraint firstItem="jHg-e9-z9y" firstAttribute="top" secondItem="TAi-QD-VbT" secondAttribute="top" id="51k-5F-BWG"/>
+                                    <constraint firstItem="LOt-0u-vFv" firstAttribute="leading" secondItem="NeW-rp-i37" secondAttribute="leading" id="6a3-DB-WOH"/>
+                                    <constraint firstAttribute="trailing" secondItem="HfC-4b-Iu1" secondAttribute="trailing" id="7if-am-bqR"/>
+                                    <constraint firstItem="HfC-4b-Iu1" firstAttribute="height" secondItem="jHg-e9-z9y" secondAttribute="height" id="E4O-Ub-Xuh"/>
+                                    <constraint firstAttribute="trailing" secondItem="jHg-e9-z9y" secondAttribute="trailing" id="EEL-Ak-kkS"/>
+                                    <constraint firstItem="MRS-kf-Ufe" firstAttribute="leading" secondItem="TAi-QD-VbT" secondAttribute="leading" id="Kq0-k2-SSK"/>
+                                    <constraint firstItem="jHg-e9-z9y" firstAttribute="leading" secondItem="TAi-QD-VbT" secondAttribute="leading" id="Quc-HT-fAA"/>
+                                    <constraint firstItem="epq-mw-eVm" firstAttribute="leading" secondItem="TAi-QD-VbT" secondAttribute="leading" id="R7X-Nj-e4H"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ttn-vM-Hyf" secondAttribute="trailing" id="Sjv-4K-cus"/>
+                                    <constraint firstItem="MRS-kf-Ufe" firstAttribute="top" secondItem="jHg-e9-z9y" secondAttribute="bottom" id="X94-Yt-Zjl"/>
+                                    <constraint firstItem="LOt-0u-vFv" firstAttribute="trailing" secondItem="HfC-4b-Iu1" secondAttribute="trailing" id="Xku-rq-dXB"/>
+                                    <constraint firstItem="Ttn-vM-Hyf" firstAttribute="height" secondItem="HfC-4b-Iu1" secondAttribute="height" id="Xo2-p1-Bdv"/>
+                                    <constraint firstItem="LOt-0u-vFv" firstAttribute="leading" secondItem="HfC-4b-Iu1" secondAttribute="leading" id="Yc8-7y-fit"/>
+                                    <constraint firstItem="NeW-rp-i37" firstAttribute="top" secondItem="HfC-4b-Iu1" secondAttribute="bottom" id="Zp4-Ka-P6l"/>
+                                    <constraint firstItem="HfC-4b-Iu1" firstAttribute="leading" secondItem="TAi-QD-VbT" secondAttribute="leading" id="b0O-HO-Y16"/>
+                                    <constraint firstAttribute="height" constant="203" id="dmT-Mp-rxf"/>
+                                    <constraint firstItem="MRS-kf-Ufe" firstAttribute="top" secondItem="TAi-QD-VbT" secondAttribute="top" constant="50" id="gCj-da-EM9"/>
+                                    <constraint firstItem="epq-mw-eVm" firstAttribute="height" secondItem="jHg-e9-z9y" secondAttribute="height" id="gi0-3Q-7Md"/>
+                                    <constraint firstAttribute="trailing" secondItem="epq-mw-eVm" secondAttribute="trailing" id="l5o-JK-YJT"/>
+                                    <constraint firstItem="LOt-0u-vFv" firstAttribute="top" secondItem="epq-mw-eVm" secondAttribute="bottom" id="nSM-Cg-enQ"/>
+                                    <constraint firstItem="Ttn-vM-Hyf" firstAttribute="top" secondItem="HfC-4b-Iu1" secondAttribute="bottom" constant="1" id="pZC-aC-5BR"/>
+                                    <constraint firstItem="epq-mw-eVm" firstAttribute="top" secondItem="MRS-kf-Ufe" secondAttribute="bottom" id="pkq-sB-Bzz"/>
+                                    <constraint firstItem="HfC-4b-Iu1" firstAttribute="top" secondItem="LOt-0u-vFv" secondAttribute="bottom" id="pqb-Zn-Y0F"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ttn-vM-Hyf" secondAttribute="bottom" constant="1" id="vXs-HG-gwF"/>
+                                    <constraint firstItem="Ttn-vM-Hyf" firstAttribute="leading" secondItem="TAi-QD-VbT" secondAttribute="leading" id="zyl-GL-ac3"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0zu-Ln-l0a">
+                                <rect key="frame" x="27" y="543" width="358" height="44"/>
+                                <color key="backgroundColor" red="0.81568627449999997" green="0.0078431372550000003" blue="0.1058823529" alpha="0.7478863442" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Kxf-ON-DE9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SukhumvitSet-Bold" family="Sukhumvit Set" pointSize="16"/>
+                                <state key="normal" title="สมัครสมาชิก">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerAction:" destination="YKw-iz-SFZ" eventType="touchUpInside" id="NXe-Eb-WDo"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWL-Yy-Ubj">
+                                <rect key="frame" x="27" y="595" width="358" height="44"/>
+                                <color key="backgroundColor" red="0.23529411759999999" green="0.31764705879999999" blue="0.57647058819999997" alpha="0.7478863442" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="77r-Vk-OAM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SukhumvitSet-Bold" family="Sukhumvit Set" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="-50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="ล็อคอินด้วย facebook" image="ic_facebook">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="facebookAction:" destination="YKw-iz-SFZ" eventType="touchUpInside" id="Jcr-pu-nkH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="t1b-fI-fPd" firstAttribute="leading" secondItem="1gj-G0-Bj7" secondAttribute="leading" constant="8" id="8uX-fE-Co8"/>
+                            <constraint firstItem="ya6-1c-400" firstAttribute="leading" secondItem="1gj-G0-Bj7" secondAttribute="leading" constant="8" id="9VK-hf-eJi"/>
+                            <constraint firstItem="TAi-QD-VbT" firstAttribute="leading" secondItem="1gj-G0-Bj7" secondAttribute="leading" constant="27" id="A1h-JL-k8r"/>
+                            <constraint firstItem="lWL-Yy-Ubj" firstAttribute="top" secondItem="0zu-Ln-l0a" secondAttribute="bottom" constant="8" id="DGO-oq-pl4"/>
+                            <constraint firstItem="XRb-V0-Ds3" firstAttribute="leading" secondItem="1gj-G0-Bj7" secondAttribute="leading" id="Mf2-Ua-giw"/>
+                            <constraint firstItem="lWL-Yy-Ubj" firstAttribute="leading" secondItem="1gj-G0-Bj7" secondAttribute="leading" constant="27" id="Niz-fh-dpw"/>
+                            <constraint firstItem="XRb-V0-Ds3" firstAttribute="top" secondItem="n0K-E8-fbz" secondAttribute="top" id="Sij-IU-JkL"/>
+                            <constraint firstItem="TAi-QD-VbT" firstAttribute="top" secondItem="ya6-1c-400" secondAttribute="bottom" constant="25.5" id="VMI-Xa-MG9"/>
+                            <constraint firstItem="1gj-G0-Bj7" firstAttribute="trailing" secondItem="TAi-QD-VbT" secondAttribute="trailing" constant="29" id="WBf-0v-qRe"/>
+                            <constraint firstItem="ya6-1c-400" firstAttribute="top" secondItem="1gj-G0-Bj7" secondAttribute="top" multiplier="0.6" constant="230.59999999999999" id="aff-oN-AVY"/>
+                            <constraint firstItem="1gj-G0-Bj7" firstAttribute="trailing" secondItem="ya6-1c-400" secondAttribute="trailing" constant="8" id="axP-WZ-eyO"/>
+                            <constraint firstItem="0zu-Ln-l0a" firstAttribute="top" secondItem="TAi-QD-VbT" secondAttribute="bottom" constant="20" id="e08-St-eE2"/>
+                            <constraint firstItem="XRb-V0-Ds3" firstAttribute="trailing" secondItem="1gj-G0-Bj7" secondAttribute="trailing" id="eeu-aV-qYe"/>
+                            <constraint firstAttribute="bottom" secondItem="XRb-V0-Ds3" secondAttribute="bottom" id="kGG-Cr-xMG"/>
+                            <constraint firstItem="0zu-Ln-l0a" firstAttribute="leading" secondItem="1gj-G0-Bj7" secondAttribute="leading" constant="27" id="kal-SH-NlJ"/>
+                            <constraint firstItem="1gj-G0-Bj7" firstAttribute="trailing" secondItem="0zu-Ln-l0a" secondAttribute="trailing" constant="29" id="kh6-8a-VNL"/>
+                            <constraint firstItem="1gj-G0-Bj7" firstAttribute="trailing" secondItem="lWL-Yy-Ubj" secondAttribute="trailing" constant="29" id="mcI-wM-gvT"/>
+                            <constraint firstItem="t1b-fI-fPd" firstAttribute="top" secondItem="1gj-G0-Bj7" secondAttribute="top" constant="8" id="zbg-QN-Anz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1gj-G0-Bj7"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="confrimPasswordTextField" destination="9ya-1k-6yg" id="nRU-xg-5Ml"/>
+                        <outlet property="confrimPasswordTitleLabel" destination="w59-Dp-8hA" id="xdd-ab-c0n"/>
+                        <outlet property="emailTextField" destination="uke-7s-fb7" id="aPa-cs-OkQ"/>
+                        <outlet property="emailTitleLabel" destination="lwp-I5-Cse" id="fyq-M2-TXi"/>
+                        <outlet property="facebookButton" destination="lWL-Yy-Ubj" id="q0c-6e-gPf"/>
+                        <outlet property="passwordTextField" destination="kmz-XO-tIU" id="AHD-Pp-0Ea"/>
+                        <outlet property="passwordTitleLabel" destination="BZh-kA-JOd" id="rrz-PO-L3v"/>
+                        <outlet property="registerBoxView" destination="TAi-QD-VbT" id="4XY-kz-cKG"/>
+                        <outlet property="registerButton" destination="0zu-Ln-l0a" id="VSg-3M-ZnQ"/>
+                        <outlet property="titleLabel" destination="ya6-1c-400" id="4wK-SQ-wbA"/>
+                        <outlet property="usernameTextField" destination="PPA-2k-GU9" id="PFC-TX-0ky"/>
+                        <outlet property="usernameTitleLabel" destination="ZQ1-6q-Ipp" id="Mfz-gE-joc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z0Y-6G-bq2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-107.24637681159422" y="87.723214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg_login" width="375" height="812"/>
+        <image name="ic_facebook" width="12" height="25"/>
+        <image name="ic_login_close" width="24" height="24"/>
+    </resources>
+</document>

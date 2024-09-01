@@ -1,0 +1,91 @@
+
+
+iframe {
+    max-width: 100% !important;
+}
+
+img {
+    width: 100% !important;
+}
+
+img[width][height] {
+    height: auto !important;
+}
+
+a {
+    word-wrap: break-word;
+}
+
+@font-face
+{
+    font-family: 'Sukhumvit Set';
+    font-weight: normal;
+    src: url(SukhumvitSet-Text.ttf);
+}
+@font-face
+{
+    font-family: 'Sukhumvit Set';
+    font-weight: bold;
+    src: url(SukhumvitSet-Bold.ttf);
+}
+@font-face
+{
+    font-family: 'Sukhumvit Set';
+    font-weight: 900;
+    src: url(SukhumvitSet-Medium.ttf);
+}
+@font-face
+{
+    font-family: 'Sukhumvit Set';
+    font-weight: 200;
+    src: url(SukhumvitSet-Light.ttf);
+}
+@font-face
+{
+    font-family: 'Sukhumvit Set';
+    font-weight: 500;
+    src: url(SukhumvitSet-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'FontAwesome';
+    src: url(fontawesome-webfont.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-eye:before {
+    content: "\f06e";
+}
+.fa-thumbs-up:before {
+    content: "\f164";
+}
+.content-body .meta-content-block {
+    font-size: 15px;
+    color: #646f7a;
+}
+.content-header {
+    -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+    color: #ffffff;
+    position: relative;
+}
+.content-header .content-title {
+    -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+99&0+0,1+100 */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.99) 99%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.99) 99%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.99) 99%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+    
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    padding: 0px;
+}

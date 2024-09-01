@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SukhumvitSet-Bold.ttf">
+            <string>SukhumvitSet-Bold</string>
+        </array>
+        <array key="SukhumvitSet-Light.ttf">
+            <string>SukhumvitSet-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="TEe-UJ-XiF" customClass="ContentItemVerticalLoadingCollectionViewCell" customModule="Ghost_Night" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="138" height="240"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="138" height="240"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pMZ-9I-9If" customClass="FAView" customModule="Ghost_Night" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="138" height="240"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DFb-E1-Xpx" customClass="FAShimmerImageView" customModule="Ghost_Night" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="138" height="170"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aas-sa-Es3" userLabel="ContentBoxView">
+                                <rect key="frame" x="0.0" y="170" width="138" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJd-yu-SfZ" customClass="FAShimmerLabelView" customModule="Ghost_Night" customModuleProvider="target">
+                                        <rect key="frame" x="2" y="4" width="134" height="14"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="14" id="5DL-x7-5ie"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SukhumvitSet-Bold" family="Sukhumvit Set" pointSize="10"/>
+                                        <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUp-5Z-p7J" customClass="FAShimmerLabelView" customModule="Ghost_Night" customModuleProvider="target">
+                                        <rect key="frame" x="4" y="19" width="130" height="32"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="SukhumvitSet-Light" family="Sukhumvit Set" pointSize="10"/>
+                                        <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LI0-cv-Nfj" customClass="FAShimmerImageView" customModule="Ghost_Night" customModuleProvider="target">
+                                        <rect key="frame" x="4" y="56" width="9" height="7"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="7" id="0yQ-6b-gta"/>
+                                            <constraint firstAttribute="width" constant="9" id="kmp-is-cwO"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esN-dL-Cav" customClass="FAShimmerLabelView" customModule="Ghost_Night" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="55" width="55" height="10"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="SukhumvitSet-Bold" family="Sukhumvit Set" pointSize="6"/>
+                                        <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzp-Yi-Nb9" customClass="FAShimmerLabelView" customModule="Ghost_Night" customModuleProvider="target">
+                                        <rect key="frame" x="75" y="55" width="59" height="10"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="SukhumvitSet-Bold" family="Sukhumvit Set" pointSize="6"/>
+                                        <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="uzp-Yi-Nb9" secondAttribute="bottom" constant="5" id="3gc-Pa-8VQ"/>
+                                    <constraint firstItem="esN-dL-Cav" firstAttribute="top" secondItem="EUp-5Z-p7J" secondAttribute="bottom" constant="4" id="4cI-Z7-u9X"/>
+                                    <constraint firstAttribute="trailing" secondItem="EUp-5Z-p7J" secondAttribute="trailing" constant="4" id="A2k-Gs-KM2"/>
+                                    <constraint firstAttribute="trailing" secondItem="sJd-yu-SfZ" secondAttribute="trailing" constant="2" id="EGK-id-fy3"/>
+                                    <constraint firstAttribute="bottom" secondItem="esN-dL-Cav" secondAttribute="bottom" constant="5" id="Ej9-41-uPW"/>
+                                    <constraint firstAttribute="bottom" secondItem="LI0-cv-Nfj" secondAttribute="bottom" constant="7" id="HyU-1B-MQ3"/>
+                                    <constraint firstItem="esN-dL-Cav" firstAttribute="leading" secondItem="LI0-cv-Nfj" secondAttribute="trailing" constant="3" id="OSL-t5-d9d"/>
+                                    <constraint firstItem="EUp-5Z-p7J" firstAttribute="top" secondItem="sJd-yu-SfZ" secondAttribute="bottom" constant="1" id="SS3-Ht-4Qy"/>
+                                    <constraint firstAttribute="trailing" secondItem="uzp-Yi-Nb9" secondAttribute="trailing" constant="4" id="SrF-Bp-QvR"/>
+                                    <constraint firstItem="uzp-Yi-Nb9" firstAttribute="top" secondItem="EUp-5Z-p7J" secondAttribute="bottom" constant="4" id="Ta6-sI-lxh"/>
+                                    <constraint firstItem="sJd-yu-SfZ" firstAttribute="top" secondItem="aas-sa-Es3" secondAttribute="top" constant="4" id="V9S-P4-Fld"/>
+                                    <constraint firstItem="uzp-Yi-Nb9" firstAttribute="leading" secondItem="esN-dL-Cav" secondAttribute="trailing" constant="4" id="VzM-DD-0qT"/>
+                                    <constraint firstAttribute="trailing" secondItem="esN-dL-Cav" secondAttribute="trailing" constant="67" id="XIt-AM-sjQ"/>
+                                    <constraint firstItem="LI0-cv-Nfj" firstAttribute="top" secondItem="EUp-5Z-p7J" secondAttribute="bottom" constant="5" id="YjJ-T5-Pp9"/>
+                                    <constraint firstItem="LI0-cv-Nfj" firstAttribute="leading" secondItem="aas-sa-Es3" secondAttribute="leading" constant="4" id="Zvi-0K-DJc"/>
+                                    <constraint firstItem="sJd-yu-SfZ" firstAttribute="leading" secondItem="aas-sa-Es3" secondAttribute="leading" constant="2" id="cwL-JK-whD"/>
+                                    <constraint firstItem="EUp-5Z-p7J" firstAttribute="leading" secondItem="aas-sa-Es3" secondAttribute="leading" constant="4" id="jfT-J3-ssQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DFb-E1-Xpx" secondAttribute="trailing" id="H7K-Rb-xEE"/>
+                            <constraint firstItem="DFb-E1-Xpx" firstAttribute="leading" secondItem="pMZ-9I-9If" secondAttribute="leading" id="bwz-dC-nL3"/>
+                            <constraint firstAttribute="bottom" secondItem="aas-sa-Es3" secondAttribute="bottom" id="d18-B7-2Wl"/>
+                            <constraint firstAttribute="trailing" secondItem="aas-sa-Es3" secondAttribute="trailing" id="d2L-CB-cvU"/>
+                            <constraint firstItem="aas-sa-Es3" firstAttribute="leading" secondItem="pMZ-9I-9If" secondAttribute="leading" id="lW3-hY-phi"/>
+                            <constraint firstItem="aas-sa-Es3" firstAttribute="top" secondItem="DFb-E1-Xpx" secondAttribute="bottom" id="nzv-CK-FJb"/>
+                            <constraint firstItem="DFb-E1-Xpx" firstAttribute="top" secondItem="pMZ-9I-9If" secondAttribute="top" id="rjH-0A-wkp"/>
+                            <constraint firstAttribute="bottom" secondItem="DFb-E1-Xpx" secondAttribute="bottom" constant="70" id="tM2-eJ-5et"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="pMZ-9I-9If" firstAttribute="top" secondItem="TEe-UJ-XiF" secondAttribute="top" id="8tY-O9-Ryk"/>
+                <constraint firstItem="pMZ-9I-9If" firstAttribute="leading" secondItem="TEe-UJ-XiF" secondAttribute="leading" id="VB5-hT-Drg"/>
+                <constraint firstAttribute="trailing" secondItem="pMZ-9I-9If" secondAttribute="trailing" id="eyX-4k-y8X"/>
+                <constraint firstAttribute="bottom" secondItem="pMZ-9I-9If" secondAttribute="bottom" id="hvQ-LW-K4A"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="lpR-dr-vUd"/>
+            <size key="customSize" width="138" height="240"/>
+            <connections>
+                <outlet property="bgView" destination="pMZ-9I-9If" id="jw0-JL-vXK"/>
+                <outlet property="thubnailImageView" destination="DFb-E1-Xpx" id="ODV-t3-P4f"/>
+            </connections>
+            <point key="canvasLocation" x="204.34782608695653" y="187.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

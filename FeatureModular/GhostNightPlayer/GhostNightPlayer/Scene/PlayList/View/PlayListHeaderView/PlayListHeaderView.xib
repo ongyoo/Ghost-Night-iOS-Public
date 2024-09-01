@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SukhumvitSet-Bold.ttf">
+            <string>SukhumvitSet-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="PlayListHeaderView" customModule="GhostNightPlayer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XpN-PL-f6q">
+                    <rect key="frame" x="345" y="2" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="0gR-UN-uRp"/>
+                        <constraint firstAttribute="width" constant="60" id="KKK-xZ-LPf"/>
+                    </constraints>
+                    <state key="normal" image="ic_playlist_gray"/>
+                    <connections>
+                        <action selector="playAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="yhA-xL-D5x"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFW-1p-Ptd">
+                    <rect key="frame" x="13" y="16.333333333333329" width="316" height="31.666666666666671"/>
+                    <fontDescription key="fontDescription" name="SukhumvitSet-Bold" family="Sukhumvit Set" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="XpN-PL-f6q" secondAttribute="trailing" constant="9" id="A9e-AA-FiT"/>
+                <constraint firstItem="FFW-1p-Ptd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="13" id="Fof-af-AJO"/>
+                <constraint firstItem="XpN-PL-f6q" firstAttribute="leading" secondItem="FFW-1p-Ptd" secondAttribute="trailing" constant="16" id="HcS-DS-1VT"/>
+                <constraint firstItem="XpN-PL-f6q" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="2" id="M9N-lo-5OC"/>
+                <constraint firstItem="FFW-1p-Ptd" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="eJR-SX-76B"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="listTitleLabel" destination="FFW-1p-Ptd" id="nSZ-9l-XNe"/>
+                <outlet property="playButton" destination="XpN-PL-f6q" id="2hV-mH-U6a"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="-166.30434782608697"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_playlist_gray" width="80" height="80"/>
+    </resources>
+</document>

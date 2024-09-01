@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tpn-sM-RMx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Play List View Controller-->
+        <scene sceneID="1B2-QE-wZc">
+            <objects>
+                <viewController storyboardIdentifier="MainPlayListViewController" id="W79-rZ-bOT" customClass="MainPlayListViewController" customModule="Ghost_Night" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xbO-Z6-4Z4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IsN-8X-HEW" customClass="MainHeaderView" customModule="Component">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="172"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.0" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="172" id="91H-lW-7Rz"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qHn-hr-lau">
+                                <rect key="frame" x="0.0" y="172" width="414" height="641"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="W79-rZ-bOT" id="oa1-Bc-31c"/>
+                                    <outlet property="delegate" destination="W79-rZ-bOT" id="H6N-Wd-yRW"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qHn-hr-lau" firstAttribute="leading" secondItem="fQK-cY-kFK" secondAttribute="leading" id="6Sv-be-siI"/>
+                            <constraint firstItem="qHn-hr-lau" firstAttribute="trailing" secondItem="fQK-cY-kFK" secondAttribute="trailing" id="B4K-0I-YVW"/>
+                            <constraint firstItem="qHn-hr-lau" firstAttribute="top" secondItem="IsN-8X-HEW" secondAttribute="bottom" id="Cc2-Ti-9T9"/>
+                            <constraint firstItem="IsN-8X-HEW" firstAttribute="leading" secondItem="fQK-cY-kFK" secondAttribute="leading" id="TbJ-Dk-yJE"/>
+                            <constraint firstItem="qHn-hr-lau" firstAttribute="bottom" secondItem="fQK-cY-kFK" secondAttribute="bottom" id="i5V-5E-zDG"/>
+                            <constraint firstItem="IsN-8X-HEW" firstAttribute="top" secondItem="xbO-Z6-4Z4" secondAttribute="top" id="mGn-7M-6kw"/>
+                            <constraint firstItem="IsN-8X-HEW" firstAttribute="trailing" secondItem="fQK-cY-kFK" secondAttribute="trailing" id="tJe-BP-jXl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fQK-cY-kFK"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5oB-Dt-U8I"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="headerView" destination="IsN-8X-HEW" id="ClJ-UF-ZCR"/>
+                        <outlet property="tableView" destination="qHn-hr-lau" id="XlK-aR-rnu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hoX-jK-okj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3089.8550724637685" y="114.50892857142857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oJV-MS-XWm">
+            <objects>
+                <navigationController storyboardIdentifier="MainPlayListNav" id="tpn-sM-RMx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Sai-xS-0fh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="W79-rZ-bOT" kind="relationship" relationship="rootViewController" id="BXp-sr-GZ3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JA9-OE-5b8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2102.898550724638" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+</document>

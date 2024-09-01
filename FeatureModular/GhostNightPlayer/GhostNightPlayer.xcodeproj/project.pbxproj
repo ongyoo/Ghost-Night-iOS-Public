@@ -1,0 +1,784 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5442660A248170D800532EC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54426609248170D800532EC6 /* Assets.xcassets */; };
+		544266142483AF7200532EC6 /* AudioPlayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5442660F2483AF7100532EC6 /* AudioPlayer.storyboard */; };
+		544266152483AF7200532EC6 /* AudioPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544266112483AF7100532EC6 /* AudioPlayerViewModel.swift */; };
+		544266162483AF7200532EC6 /* AudioPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544266132483AF7100532EC6 /* AudioPlayerViewController.swift */; };
+		5442661C2483AFF900532EC6 /* MiniAudioPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5442661B2483AFF900532EC6 /* MiniAudioPlayerView.xib */; };
+		5442661E2483B00900532EC6 /* MiniAudioPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5442661D2483B00900532EC6 /* MiniAudioPlayerView.swift */; };
+		54B05D30245F2EC800885711 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B05D2E245F2EC800885711 /* Core.framework */; };
+		54B05D32245F2EC800885711 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B05D2F245F2EC800885711 /* Data.framework */; };
+		54B05D5E245F31FA00885711 /* Component.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B05D5D245F31FA00885711 /* Component.framework */; };
+		54B05D67245F32B000885711 /* AudioPlayerManagerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B05D65245F32B000885711 /* AudioPlayerManagerViewModel.swift */; };
+		54B05D68245F32B000885711 /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B05D66245F32B000885711 /* AudioPlayerManager.swift */; };
+		54BF1044247B884C0034082E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BF1043247B884C0034082E /* BaseViewController.swift */; };
+		54D92610245DCFB600451026 /* GhostNightPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D92606245DCFB600451026 /* GhostNightPlayer.framework */; };
+		54D92615245DCFB600451026 /* GhostNightPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D92614245DCFB600451026 /* GhostNightPlayerTests.swift */; };
+		54D92617245DCFB600451026 /* GhostNightPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 54D92609245DCFB600451026 /* GhostNightPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54F3C6A6248C0C8400438B62 /* PlayList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54F3C6A5248C0C8400438B62 /* PlayList.storyboard */; };
+		54F3C6A8248C0F1700438B62 /* PlayListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F3C6A7248C0F1700438B62 /* PlayListViewController.swift */; };
+		54F3C6AA248C0F2800438B62 /* PlayListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F3C6A9248C0F2800438B62 /* PlayListViewModel.swift */; };
+		54F3C6AE248CD3F800438B62 /* PlayListItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F3C6AC248CD3F800438B62 /* PlayListItemTableViewCell.swift */; };
+		54F3C6AF248CD3F800438B62 /* PlayListItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54F3C6AD248CD3F800438B62 /* PlayListItemTableViewCell.xib */; };
+		54F3C6B1248CD91000438B62 /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F3C6B0248CD91000438B62 /* NavigationManager.swift */; };
+		54F3C6B4248D3AD800438B62 /* PlayListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F3C6B3248D3AD800438B62 /* PlayListHeaderView.swift */; };
+		54F3C6B6248D3AE300438B62 /* PlayListHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54F3C6B5248D3AE300438B62 /* PlayListHeaderView.xib */; };
+		8866F09991A026A39814CDF3 /* Pods_GhostNightPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0841DE811461D5D2D51737B2 /* Pods_GhostNightPlayer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54D92611245DCFB600451026 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54D925FD245DCFB600451026 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54D92605245DCFB600451026;
+			remoteInfo = GhostNightPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0841DE811461D5D2D51737B2 /* Pods_GhostNightPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GhostNightPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54426609248170D800532EC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5442660F2483AF7100532EC6 /* AudioPlayer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AudioPlayer.storyboard; sourceTree = "<group>"; };
+		544266112483AF7100532EC6 /* AudioPlayerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayerViewModel.swift; sourceTree = "<group>"; };
+		544266132483AF7100532EC6 /* AudioPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayerViewController.swift; sourceTree = "<group>"; };
+		5442661B2483AFF900532EC6 /* MiniAudioPlayerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MiniAudioPlayerView.xib; sourceTree = "<group>"; };
+		5442661D2483B00900532EC6 /* MiniAudioPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniAudioPlayerView.swift; sourceTree = "<group>"; };
+		54B05D2E245F2EC800885711 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54B05D2F245F2EC800885711 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54B05D5D245F31FA00885711 /* Component.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Component.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54B05D65245F32B000885711 /* AudioPlayerManagerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayerManagerViewModel.swift; sourceTree = "<group>"; };
+		54B05D66245F32B000885711 /* AudioPlayerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
+		54BF1043247B884C0034082E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		54D92606245DCFB600451026 /* GhostNightPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GhostNightPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54D92609245DCFB600451026 /* GhostNightPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GhostNightPlayer.h; sourceTree = "<group>"; };
+		54D9260A245DCFB600451026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54D9260F245DCFB600451026 /* GhostNightPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GhostNightPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54D92614245DCFB600451026 /* GhostNightPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhostNightPlayerTests.swift; sourceTree = "<group>"; };
+		54D92616245DCFB600451026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54F3C6A5248C0C8400438B62 /* PlayList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlayList.storyboard; sourceTree = "<group>"; };
+		54F3C6A7248C0F1700438B62 /* PlayListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListViewController.swift; sourceTree = "<group>"; };
+		54F3C6A9248C0F2800438B62 /* PlayListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListViewModel.swift; sourceTree = "<group>"; };
+		54F3C6AC248CD3F800438B62 /* PlayListItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListItemTableViewCell.swift; sourceTree = "<group>"; };
+		54F3C6AD248CD3F800438B62 /* PlayListItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayListItemTableViewCell.xib; sourceTree = "<group>"; };
+		54F3C6B0248CD91000438B62 /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
+		54F3C6B3248D3AD800438B62 /* PlayListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListHeaderView.swift; sourceTree = "<group>"; };
+		54F3C6B5248D3AE300438B62 /* PlayListHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayListHeaderView.xib; sourceTree = "<group>"; };
+		B516E771F20DF05924E8495C /* Pods-GhostNightPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GhostNightPlayer.debug.xcconfig"; path = "Target Support Files/Pods-GhostNightPlayer/Pods-GhostNightPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		D5F88F12389A89DE5800F67E /* Pods-GhostNightPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GhostNightPlayer.release.xcconfig"; path = "Target Support Files/Pods-GhostNightPlayer/Pods-GhostNightPlayer.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54D92603245DCFB600451026 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54B05D32245F2EC800885711 /* Data.framework in Frameworks */,
+				8866F09991A026A39814CDF3 /* Pods_GhostNightPlayer.framework in Frameworks */,
+				54B05D5E245F31FA00885711 /* Component.framework in Frameworks */,
+				54B05D30245F2EC800885711 /* Core.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54D9260C245DCFB600451026 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54D92610245DCFB600451026 /* GhostNightPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54426608248170B400532EC6 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				54426609248170D800532EC6 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		5442660D2483AF5300532EC6 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				54F3C69E248BFE7100438B62 /* PlayList */,
+				544266172483AF7D00532EC6 /* MiniAudioPlayer */,
+				5442660E2483AF7100532EC6 /* AudioPlayer */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		5442660E2483AF7100532EC6 /* AudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				5442660F2483AF7100532EC6 /* AudioPlayer.storyboard */,
+				544266102483AF7100532EC6 /* ViewModel */,
+				544266122483AF7100532EC6 /* Controller */,
+			);
+			path = AudioPlayer;
+			sourceTree = "<group>";
+		};
+		544266102483AF7100532EC6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				544266112483AF7100532EC6 /* AudioPlayerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		544266122483AF7100532EC6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				544266132483AF7100532EC6 /* AudioPlayerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		544266172483AF7D00532EC6 /* MiniAudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				5442661A2483AFEB00532EC6 /* View */,
+				544266192483AFB300532EC6 /* ViewModel */,
+				544266182483AFA500532EC6 /* Controller */,
+			);
+			path = MiniAudioPlayer;
+			sourceTree = "<group>";
+		};
+		544266182483AFA500532EC6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5442661D2483B00900532EC6 /* MiniAudioPlayerView.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		544266192483AFB300532EC6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5442661A2483AFEB00532EC6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5442661B2483AFF900532EC6 /* MiniAudioPlayerView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		54B05D61245F326200885711 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				54B05D62245F32B000885711 /* PlayerManager */,
+				54F3C6B0248CD91000438B62 /* NavigationManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		54B05D62245F32B000885711 /* PlayerManager */ = {
+			isa = PBXGroup;
+			children = (
+				54B05D63245F32B000885711 /* AudioPlayer */,
+			);
+			path = PlayerManager;
+			sourceTree = "<group>";
+		};
+		54B05D63245F32B000885711 /* AudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				54B05D64245F32B000885711 /* ViewModel */,
+				54B05D66245F32B000885711 /* AudioPlayerManager.swift */,
+			);
+			path = AudioPlayer;
+			sourceTree = "<group>";
+		};
+		54B05D64245F32B000885711 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				54B05D65245F32B000885711 /* AudioPlayerManagerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		54B05DF02460867200885711 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		54B05DF12460868800885711 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		54B05DF5246086B200885711 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		54BF1042247B883A0034082E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				54BF1043247B884C0034082E /* BaseViewController.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		54D925FC245DCFB600451026 = {
+			isa = PBXGroup;
+			children = (
+				54D92608245DCFB600451026 /* GhostNightPlayer */,
+				54D92613245DCFB600451026 /* GhostNightPlayerTests */,
+				54D92607245DCFB600451026 /* Products */,
+				72C157A4CDCFDCD698BCC8EE /* Pods */,
+				67C82829BA4E195F6B2F4A7A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		54D92607245DCFB600451026 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54D92606245DCFB600451026 /* GhostNightPlayer.framework */,
+				54D9260F245DCFB600451026 /* GhostNightPlayerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54D92608245DCFB600451026 /* GhostNightPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				5442660D2483AF5300532EC6 /* Scene */,
+				54426608248170B400532EC6 /* Resource */,
+				54BF1042247B883A0034082E /* Extension */,
+				54B05DF5246086B200885711 /* Model */,
+				54B05DF12460868800885711 /* Repository */,
+				54B05DF02460867200885711 /* UseCase */,
+				54B05D61245F326200885711 /* Helpers */,
+				54D92609245DCFB600451026 /* GhostNightPlayer.h */,
+				54D9260A245DCFB600451026 /* Info.plist */,
+			);
+			path = GhostNightPlayer;
+			sourceTree = "<group>";
+		};
+		54D92613245DCFB600451026 /* GhostNightPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				54D92614245DCFB600451026 /* GhostNightPlayerTests.swift */,
+				54D92616245DCFB600451026 /* Info.plist */,
+			);
+			path = GhostNightPlayerTests;
+			sourceTree = "<group>";
+		};
+		54F3C69E248BFE7100438B62 /* PlayList */ = {
+			isa = PBXGroup;
+			children = (
+				54F3C6A4248C0C2C00438B62 /* ViewModel */,
+				54F3C6A3248C0C2600438B62 /* Controller */,
+				54F3C69F248BFF6F00438B62 /* View */,
+			);
+			path = PlayList;
+			sourceTree = "<group>";
+		};
+		54F3C69F248BFF6F00438B62 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				54F3C6B2248D3AB900438B62 /* PlayListHeaderView */,
+				54F3C6AB248CD3D400438B62 /* PlayListItemCell */,
+				54F3C6A5248C0C8400438B62 /* PlayList.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		54F3C6A3248C0C2600438B62 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				54F3C6A7248C0F1700438B62 /* PlayListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		54F3C6A4248C0C2C00438B62 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				54F3C6A9248C0F2800438B62 /* PlayListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		54F3C6AB248CD3D400438B62 /* PlayListItemCell */ = {
+			isa = PBXGroup;
+			children = (
+				54F3C6AC248CD3F800438B62 /* PlayListItemTableViewCell.swift */,
+				54F3C6AD248CD3F800438B62 /* PlayListItemTableViewCell.xib */,
+			);
+			path = PlayListItemCell;
+			sourceTree = "<group>";
+		};
+		54F3C6B2248D3AB900438B62 /* PlayListHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				54F3C6B3248D3AD800438B62 /* PlayListHeaderView.swift */,
+				54F3C6B5248D3AE300438B62 /* PlayListHeaderView.xib */,
+			);
+			path = PlayListHeaderView;
+			sourceTree = "<group>";
+		};
+		67C82829BA4E195F6B2F4A7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54B05D5D245F31FA00885711 /* Component.framework */,
+				54B05D2E245F2EC800885711 /* Core.framework */,
+				54B05D2F245F2EC800885711 /* Data.framework */,
+				0841DE811461D5D2D51737B2 /* Pods_GhostNightPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72C157A4CDCFDCD698BCC8EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B516E771F20DF05924E8495C /* Pods-GhostNightPlayer.debug.xcconfig */,
+				D5F88F12389A89DE5800F67E /* Pods-GhostNightPlayer.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		54D92601245DCFB600451026 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54D92617245DCFB600451026 /* GhostNightPlayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		54D92605245DCFB600451026 /* GhostNightPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54D9261A245DCFB600451026 /* Build configuration list for PBXNativeTarget "GhostNightPlayer" */;
+			buildPhases = (
+				098825ED8348685A3085DAA8 /* [CP] Check Pods Manifest.lock */,
+				54D92601245DCFB600451026 /* Headers */,
+				54D92602245DCFB600451026 /* Sources */,
+				54D92603245DCFB600451026 /* Frameworks */,
+				54D92604245DCFB600451026 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GhostNightPlayer;
+			productName = GhostNightPlayer;
+			productReference = 54D92606245DCFB600451026 /* GhostNightPlayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		54D9260E245DCFB600451026 /* GhostNightPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54D9261D245DCFB600451026 /* Build configuration list for PBXNativeTarget "GhostNightPlayerTests" */;
+			buildPhases = (
+				54D9260B245DCFB600451026 /* Sources */,
+				54D9260C245DCFB600451026 /* Frameworks */,
+				54D9260D245DCFB600451026 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54D92612245DCFB600451026 /* PBXTargetDependency */,
+			);
+			name = GhostNightPlayerTests;
+			productName = GhostNightPlayerTests;
+			productReference = 54D9260F245DCFB600451026 /* GhostNightPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54D925FD245DCFB600451026 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Komsit Chusangthong";
+				TargetAttributes = {
+					54D92605245DCFB600451026 = {
+						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
+					};
+					54D9260E245DCFB600451026 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 54D92600245DCFB600451026 /* Build configuration list for PBXProject "GhostNightPlayer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 54D925FC245DCFB600451026;
+			productRefGroup = 54D92607245DCFB600451026 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54D92605245DCFB600451026 /* GhostNightPlayer */,
+				54D9260E245DCFB600451026 /* GhostNightPlayerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54D92604245DCFB600451026 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54F3C6A6248C0C8400438B62 /* PlayList.storyboard in Resources */,
+				544266142483AF7200532EC6 /* AudioPlayer.storyboard in Resources */,
+				5442660A248170D800532EC6 /* Assets.xcassets in Resources */,
+				54F3C6B6248D3AE300438B62 /* PlayListHeaderView.xib in Resources */,
+				5442661C2483AFF900532EC6 /* MiniAudioPlayerView.xib in Resources */,
+				54F3C6AF248CD3F800438B62 /* PlayListItemTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54D9260D245DCFB600451026 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		098825ED8348685A3085DAA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GhostNightPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54D92602245DCFB600451026 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54F3C6AA248C0F2800438B62 /* PlayListViewModel.swift in Sources */,
+				54F3C6A8248C0F1700438B62 /* PlayListViewController.swift in Sources */,
+				544266152483AF7200532EC6 /* AudioPlayerViewModel.swift in Sources */,
+				54F3C6AE248CD3F800438B62 /* PlayListItemTableViewCell.swift in Sources */,
+				54BF1044247B884C0034082E /* BaseViewController.swift in Sources */,
+				54F3C6B4248D3AD800438B62 /* PlayListHeaderView.swift in Sources */,
+				544266162483AF7200532EC6 /* AudioPlayerViewController.swift in Sources */,
+				5442661E2483B00900532EC6 /* MiniAudioPlayerView.swift in Sources */,
+				54B05D67245F32B000885711 /* AudioPlayerManagerViewModel.swift in Sources */,
+				54B05D68245F32B000885711 /* AudioPlayerManager.swift in Sources */,
+				54F3C6B1248CD91000438B62 /* NavigationManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54D9260B245DCFB600451026 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54D92615245DCFB600451026 /* GhostNightPlayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54D92612245DCFB600451026 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54D92605245DCFB600451026 /* GhostNightPlayer */;
+			targetProxy = 54D92611245DCFB600451026 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		54D92618245DCFB600451026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		54D92619245DCFB600451026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		54D9261B245DCFB600451026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B516E771F20DF05924E8495C /* Pods-GhostNightPlayer.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CZS5M9529T;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = GhostNightPlayer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.komsit.ghostnight.GhostNightPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		54D9261C245DCFB600451026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5F88F12389A89DE5800F67E /* Pods-GhostNightPlayer.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CZS5M9529T;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = GhostNightPlayer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.komsit.ghostnight.GhostNightPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		54D9261E245DCFB600451026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CZS5M9529T;
+				INFOPLIST_FILE = GhostNightPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.komsit.ghostnight.GhostNightPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		54D9261F245DCFB600451026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CZS5M9529T;
+				INFOPLIST_FILE = GhostNightPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.komsit.ghostnight.GhostNightPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54D92600245DCFB600451026 /* Build configuration list for PBXProject "GhostNightPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54D92618245DCFB600451026 /* Debug */,
+				54D92619245DCFB600451026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54D9261A245DCFB600451026 /* Build configuration list for PBXNativeTarget "GhostNightPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54D9261B245DCFB600451026 /* Debug */,
+				54D9261C245DCFB600451026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54D9261D245DCFB600451026 /* Build configuration list for PBXNativeTarget "GhostNightPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54D9261E245DCFB600451026 /* Debug */,
+				54D9261F245DCFB600451026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54D925FD245DCFB600451026 /* Project object */;
+}

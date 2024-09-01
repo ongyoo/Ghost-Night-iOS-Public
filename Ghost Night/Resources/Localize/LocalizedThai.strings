@@ -1,0 +1,69 @@
+/* 
+  LocalizedThai.strings
+  Ghost Night
+
+  Created by Komsit Chusangthong on 11/5/19.
+  Copyright © 2019 Komsit Chusangthong. All rights reserved.
+*/
+
+// Main PlayList
+"TitleMainPlayList" = "เพลย์ลิสต์ของฉัน";
+
+// Main Feed
+"TitleMainFeed" = "ฟิตหลอน";
+
+// Main About
+"TitleMainAbout" = "เกี่ยวกับเรา";
+
+// Non Login TableView Cell
+"NonLoginMessageTableViewCell" = "ท่านยังไม่ได้ล็อคอินเข้าระบบ\nท่านสามารถเป็นสมาชิกง่ายๆ";
+"TitleLoginButtonTableViewCell" = "ล็อคอิินเข้าสู่ระบบ";
+"TitleRegisterButtonTableViewCell" = "สมัครสมาชิก";
+
+// UIHeaderShelfView
+"HeaderShelfViewSeeMoreButton" = "ดูเพิ่มเติม";
+"HeaderShelfViewAddPlayListButton" = "เพิ่มลิสต์";
+
+// ContentItemVerticalCollectionViewCell
+"ContentItemVerticallUserName %@" = "คุณ %@";
+"ContentItemVerticalUpdateTitlte %@" = "อัพเดต: %@";
+
+
+// Alert Helper
+"AlertOK" = "ตกลง";
+"AlertCancel" = "ยกเลิก";
+
+// User Profile
+"UserProfileUserName %@" = "คุณ %@";
+"UserProfileNotFound" = "ไม่มีข้อมูล";
+"UserProfileUserEmail %@" = "อีเมล : %@";
+"UserProfileChangePassword" = "เปลี่ยนรหัสผ่าน";
+"UserProfileMyStory" = "มายสตอรี่";
+"UserProfileSignOut" = "ออกจากระบบ";
+
+
+// Error Message
+"ErrorTitle" = "เกิิดข้อผิดพลาด";
+"ErrorAlertTitle" = "แจ้งเตือน";
+"ErrorLoginUserNameEmpty" = "ข้อมูลอีเมลไม่ถูกต้อง";
+"ErrorLoginPasswordEmpty" = "ข้อมูลรหัสผ่านไม่ถูกต้อง";
+"ErrorLoginUserNamePasswordNotFound" = "ข้อมูลอีเมลและรหัสผ่านไม่ถูกต้อง";
+"ErrorUserNotActive" = "กรุณาล็อคอินอีกครั้ง หรือ แจ้งปัญหาไปที่ผู้ดูแลระบบ";
+"ErrorUserFacebook" = "ไม่สามารถเชื่อมต่อ facebook ได้ในตอนนี้กรุณาลองใหม่อีกครั้ง";
+"ErrorSomeing" = "เกิดข้อผิดพลาด กรุณาทำรายการใหม่อีกครั้ง หรือ ติดต่อผู้ดูแลระบบ";
+
+// Error Register
+"ErrorRegisterEmail" = "กรุณาตรวจสอบข้อมูลอีเมลอีกครั้ง";
+"ErrorRegisterPasswordMin8" = "กรุณาตรวจสอบข้อมูลรหัสผ่านอย่างน้อย 8 อักษร";
+"ErrorRegisterPasswordNotMatch" = "กรุณาตรวจสอบข้อมูลรหัสผ่านไม่ตรงกัน กรุณาตรวจสอบอีกครั้ง";
+"ErrorRegisterUsername" = "กรุณาตรวจสอบข้อมูลยูสเซอร์อีกครั้ง";
+
+// Error Nonlogin
+"ErrorNonlogin" = "ท่านยังไม่ได้เข้าสู่ระบบ กรุณากด ตกลง เพื่อเข้าสู่ระบบ";
+
+// Alert SignOut
+"AlertSignOut" = "ท่านต้องการออกจากระบบ กรุณากดปุ่ม ''ตกลง''";
+
+// Error Player
+"ErrorPlayerURLNotFound" = "เกิิดข้อผิดพลาด [URL Not Found]";
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:GhostNight.xcodeproj">
+   </FileRef>
+   <Group
+      location = "container:"
+      name = "FeatureModular">
+      <FileRef
+         location = "group:FeatureModular/GhostNightPlayer/GhostNightPlayer.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Share">
+      <FileRef
+         location = "group:Share/Component/Component.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Share/Data/Data.xcodeproj">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:Core/Core/Core.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

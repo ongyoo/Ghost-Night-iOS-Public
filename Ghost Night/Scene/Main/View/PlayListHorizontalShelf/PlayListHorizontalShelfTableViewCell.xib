@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="350" id="Bje-ii-GHy" customClass="PlayListHorizontalShelfCollectionViewCell" customModule="Ghost_Night" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="Bje-ii-GHy" id="5g3-yF-U0l">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="349.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HVc-SM-cJe" userLabel="BGView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="327.5"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lXe-ma-VHp" userLabel="HeaderView" customClass="UIHeaderShelfView" customModule="Ghost_Night" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LFN-Bs-0cL"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GpV-qz-b1T" userLabel="Line2">
+                                <rect key="frame" x="0.0" y="30" width="375" height="0.5"/>
+                                <color key="backgroundColor" white="0.84632741150000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="aB2-do-Eqq"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="k9l-wF-inS">
+                                <rect key="frame" x="0.0" y="30.5" width="375" height="260"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" sectionInsetReference="safeArea" id="xws-9e-gg2">
+                                    <size key="itemSize" width="0.0" height="0.0"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZFv-cK-lbv">
+                                <rect key="frame" x="8" y="290.5" width="359" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" red="0.25490196079999999" green="0.45882352939999999" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="k9l-wF-inS" firstAttribute="top" secondItem="GpV-qz-b1T" secondAttribute="bottom" id="5fL-h0-Z63"/>
+                            <constraint firstItem="GpV-qz-b1T" firstAttribute="top" secondItem="lXe-ma-VHp" secondAttribute="bottom" id="6Jh-cH-CED"/>
+                            <constraint firstItem="ZFv-cK-lbv" firstAttribute="leading" secondItem="HVc-SM-cJe" secondAttribute="leading" constant="8" id="BUb-Yk-Zg9"/>
+                            <constraint firstItem="lXe-ma-VHp" firstAttribute="top" secondItem="HVc-SM-cJe" secondAttribute="top" id="IFW-ac-vHa"/>
+                            <constraint firstItem="lXe-ma-VHp" firstAttribute="leading" secondItem="HVc-SM-cJe" secondAttribute="leading" id="Iqg-NS-u0O"/>
+                            <constraint firstAttribute="bottom" secondItem="k9l-wF-inS" secondAttribute="bottom" constant="37" id="LR2-1Q-npD"/>
+                            <constraint firstItem="k9l-wF-inS" firstAttribute="leading" secondItem="HVc-SM-cJe" secondAttribute="leading" id="QPb-Gn-uhq"/>
+                            <constraint firstAttribute="trailing" secondItem="k9l-wF-inS" secondAttribute="trailing" id="R98-cH-UAJ"/>
+                            <constraint firstItem="GpV-qz-b1T" firstAttribute="leading" secondItem="lXe-ma-VHp" secondAttribute="leading" id="YSK-hu-DzA"/>
+                            <constraint firstAttribute="height" constant="327.5" id="dk5-WC-ftJ"/>
+                            <constraint firstAttribute="bottom" secondItem="ZFv-cK-lbv" secondAttribute="bottom" id="ewr-jd-QBk"/>
+                            <constraint firstAttribute="trailing" secondItem="lXe-ma-VHp" secondAttribute="trailing" id="mO8-yg-wIa"/>
+                            <constraint firstItem="ZFv-cK-lbv" firstAttribute="top" secondItem="k9l-wF-inS" secondAttribute="bottom" id="oya-va-Pkx"/>
+                            <constraint firstItem="GpV-qz-b1T" firstAttribute="trailing" secondItem="lXe-ma-VHp" secondAttribute="trailing" id="p19-pO-jU5"/>
+                            <constraint firstAttribute="trailing" secondItem="ZFv-cK-lbv" secondAttribute="trailing" constant="8" id="uUB-S0-dDh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="HVc-SM-cJe" firstAttribute="top" secondItem="5g3-yF-U0l" secondAttribute="top" id="LMD-ra-EA2"/>
+                    <constraint firstItem="HVc-SM-cJe" firstAttribute="leading" secondItem="5g3-yF-U0l" secondAttribute="leading" id="P52-nG-MpE"/>
+                    <constraint firstAttribute="bottom" secondItem="HVc-SM-cJe" secondAttribute="bottom" id="kIg-vK-jJU"/>
+                    <constraint firstAttribute="trailing" secondItem="HVc-SM-cJe" secondAttribute="trailing" id="we6-oq-V1z"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="PCQ-VH-Rsl"/>
+            <point key="canvasLocation" x="48.550724637681164" y="28.125"/>
+        </tableViewCell>
+    </objects>
+</document>
